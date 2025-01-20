@@ -71,16 +71,19 @@
         function switchLanguage(lang) {
             document.body.className = lang;
         }
+        function navigateTo(page) {
+            window.location.href = page;
+        }
     </script>
 </head>
 <body>
     <div class="language-switch">
         <a href="javascript:void(0)" onclick="switchLanguage('')">中文</a>
         <a href="javascript:void(0)" onclick="switchLanguage('lang-en')">English</a>
-        <button onclick="window.location.href='http://127.0.0.1:5500/index.html';">
-            <span class="cn">跳转到主页</span>
-            <span class="en">Go to Homepage</span>
-        </button>        
+        <button onclick="navigateTo('index.html')">
+            <span class="cn">主页</span>
+            <span class="en hidden">Homepage</span>
+        </button>      
     </div>
     <header>
         <h1 class="cn">资源中心 - 欢迎来到Star</h1>
