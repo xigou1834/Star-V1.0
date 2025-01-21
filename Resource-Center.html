@@ -16,7 +16,34 @@
             background-color: #4CAF50;
             color: white;
             padding: 1rem;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .language-switch {
+            display: flex;
+            align-items: center;
+        }
+        .language-switch a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .language-switch a:hover {
+            text-decoration: underline;
         }
         nav {
             background: #333;
@@ -44,19 +71,6 @@
             bottom: 0;
             width: 100%;
         }
-        .language-switch {
-            text-align: right;
-            margin: 0.5rem 1rem;
-        }
-        .language-switch a {
-            margin: 0 10px;
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .language-switch a:hover {
-            text-decoration: underline;
-        }
         .en {
             display: none;
         }
@@ -71,25 +85,18 @@
         function switchLanguage(lang) {
             document.body.className = lang;
         }
-        function navigateTo(page) {
-            window.location.href = page;
-        }
     </script>
 </head>
 <body>
-    <div class="language-switch">
-        <a href="javascript:void(0)" onclick="switchLanguage('')">中文</a>
-        <a href="javascript:void(0)" onclick="switchLanguage('lang-en')">English</a>
-        <button onclick="navigateTo('index.html')">
-            <span class="cn">主页</span>
-            <span class="en hidden">Homepage</span>
-        </button>      
-    </div>
     <header>
-        <h1 class="cn">资源中心 - 欢迎来到Star</h1>
-        <h1 class="en">Resource Center - Welcome to Star</h1>
-        <p class="cn">查找并下载你需要的镜像和工具。</p>
-        <p class="en">Find and download the resources you need.</p>
+        <a href="index.html" class="logo">
+            <img src="background-removed.png" alt="Star Icon">
+            <span>Star</span>
+        </a>
+        <div class="language-switch">
+            <a href="javascript:void(0)" onclick="switchLanguage('')">中文</a>
+            <a href="javascript:void(0)" onclick="switchLanguage('lang-en')">English</a>
+        </div>
     </header>
     <nav>
         <a href="#section1" class="cn">Windows ISO</a>
