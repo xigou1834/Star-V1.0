@@ -122,7 +122,7 @@ main {
 
 footer {
     background: rgba(255, 255, 255, 0.1); /* 全透明背景 */
-    color: black;
+    color: white;
     text-align: center;
     padding: 1rem;
     position: fixed;
