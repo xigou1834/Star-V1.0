@@ -19,10 +19,18 @@
         </div>
     </header>
     <nav>
-        <a href="#section1" class="cn">ISO 镜像中心</a>
-        <a href="#section1" class="en hidden">ISO Image Center</a>
-        <a href="#section2" class="cn">学习资源中心</a>
-        <a href="#section2" class="en hidden">Learning Resource Center</a>
+        <button onclick="navigateTo('index.html')">
+            <span class="cn">首页</span>
+            <span class="en hidden">Home</span>
+        </button>
+        <button onclick="navigateTo('#section1')">
+            <span class="cn">ISO 镜像中心</span>
+            <span class="en hidden">ISO Image Center</span>
+        </button>
+        <button onclick="navigateTo('section2')">
+            <span class="cn">学习资源中心</span>
+            <span class="en hidden">Learning Resource Center</span>
+        </button>
     </nav>
     <main>
         <section id="section1">
@@ -31,8 +39,14 @@
             <p class="cn">请点击以下链接下载 Windows 镜像。</p>
             <p class="en hidden">Please click the link below to download Windows ISO images.</p>
             <ul>
-                <li><a href="#" class="cn">Windows</a><a href="#" class="en hidden">Windows</a></li>
-                <li><a href="#" class="cn">Mac</a><a href="#" class="en hidden">Mac</a></li>
+                <li>
+                    <a href="#" class="blue-button cn">Windows</a>
+                    <a href="#" class="blue-button en hidden">Windows</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-button cn">Mac</a>
+                    <a href="#" class="blue-button en hidden">Mac</a>
+                </li>
             </ul>
         </section>
     </main>
