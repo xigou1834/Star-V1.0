@@ -32,6 +32,20 @@
     </nav>
     <main>
         <section id="section1">
+            <p class="cn">您只有输入密码才可以查看</p>
+            <p class="en hidden">You can only view it by entering the password</p>
+            <!-- 密码输入框 -->
+            <input type="password" id="passwordInput" placeholder="请输入密码/password">
+            <button onclick="checkPassword()">
+                <span class="cn">确认</span>
+                <span class="en hidden">Confirm</span>
+            </button>
+
+            <!-- 隐藏的文本 -->
+            <div id="hiddenText" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc;">
+                <p class="cn"></p>
+                <p class="en hidden"></p>
+            </div>
         </section>
     </main>
     <footer>
